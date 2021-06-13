@@ -4,7 +4,5 @@ Spring boot based application deployed using docker image
 ## Spring boot command
 ./mvnw package && java -jar target/customer-app-0.0.1-SNAPSHOT.jar
 
-## Docker commands
-1. docker build -t jaydjoshi/customer-app-docker .
-2. docker run -p 8080:8080 -t jaydjoshi/customer-app-docker
-3. docker push jaydjoshi/customer-app-docker
+## jib commands to build image
+1. ./mvnw compile jib:dockerBuild -Dimage=jaydjoshi/customer-app-docker:jib-springboot
