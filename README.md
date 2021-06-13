@@ -1,7 +1,7 @@
 # Customer app 
 Spring boot based application deployed using docker image
 
-## spring boot command
+## Spring boot command
 ./mvnw package && java -jar target/customer-app-0.0.1-SNAPSHOT.jar
 
 ## Docker commands
